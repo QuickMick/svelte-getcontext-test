@@ -9,6 +9,7 @@
 </script>
 
 <style>
+  /** when you comment following style out, everything works fine*/
   .btn-class {
     width: 100px;
     color: red;
