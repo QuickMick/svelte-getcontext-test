@@ -14,7 +14,7 @@ an then
 afterwards open index.html from ./app in your browser
 
 ## error
-occuring error (when i remove the stile in "library/src/button.svelte", the error vanishes):
+occuring error (when i remove the style in "library/src/button.svelte", the error vanishes):
 
 ```
 rollup v2.35.1
