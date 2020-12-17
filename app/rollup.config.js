@@ -1,7 +1,7 @@
 import svelte from "rollup-plugin-svelte";
-import resolve from "rollup-plugin-node-resolve";
-
-const pkg = require("./package.json");
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import css from "rollup-plugin-css-only";
 
 export default {
   input: "index.js",
@@ -12,9 +12,15 @@ export default {
   },
   plugins: [
     svelte({
-      // why do i get errors, when this is true?
-      emitCss: false,
+      compilerOptions: {
+        dev: false,
+      },
     }),
-    resolve(),
+    css({ output: "bundle.css" }),
+    resolve({
+      browser: true,
+      dedupe: ["svelte"],
+    }),
+    commonjs(),
   ],
 };

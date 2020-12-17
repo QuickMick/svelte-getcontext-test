@@ -8,4 +8,12 @@
   }
 </script>
 
-<button on:click={click}> call context function </button>
+<style>
+  .btn-class {
+    width: 100px;
+    color: red;
+    outline: 0;
+  }
+</style>
+
+<button class="btn-class" on:click={click}> call context function </button>
