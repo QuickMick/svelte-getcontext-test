@@ -1,3 +1,6 @@
+# problem
+i want to import a package (library) and use its svelte-components in my main-package (app)
+
 # how to
 
 got to ./library and:
@@ -10,7 +13,8 @@ an then
 
 afterwards open index.html from ./app in your browser
 
-occuring error:
+## error
+occuring error (when i remove the stile in "library/src/button.svelte", the error vanishes):
 
 ```
 rollup v2.35.1
